@@ -1,0 +1,79 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: url(bg.png) no-repeat;
+
+}
+a{
+    text-decoration: none;
+    color: #ccc;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.box{
+    width: 1400px;
+    height: 220px;
+    margin: 0 auto;
+}
+.box span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: url(logo.png) no-repeat;
+}
+.box .top{
+    line-height: 80px;
+    float: left;
+    margin-right: 50px;
+    color: #ccc;
+    font-size: 22px;
+    cursor: pointer;
+}
+.t_z{
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 5%;
+    padding-left: 10px;
+}
+.box .top:nth-of-type(4){
+    position: relative;
+}
+.box .top:nth-of-type(4):hover .t_z{
+    display: block;
+    
+}
+.box .top:nth-of-type(4):hover .t_z div a:hover{
+    color: rgb(23, 164, 240);
+}
+.box .top:nth-of-type(4) .t_z{
+    position: absolute;
+    bottom: -126px;
+    display: none;
+}
+.search{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    flex-direction: column;
+    align-items: center;
+}
+.search input{
+    width: 25%;
+    height: 40px;
+    border-radius: 16px;
+    border: none;
+    outline: none;
+}
+.search input:hover{
+    width: 40%;
+    transition: all 0.5s;
+}
+button{
+    margin-top: 10px;
+    padding: 10px 15px;
+}
