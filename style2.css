@@ -1,0 +1,170 @@
+/* 全局样式 */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  background-color: #ffffff;
+  color: #333;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+/* 页面布局 */
+#wrapper {
+  display: flex;
+}
+
+#main {
+  flex-basis: 90%;
+  padding: 30px;
+}
+
+#main .inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#sidebar {
+  flex-basis: 10%;
+  padding: 30px;
+  background-color: #f4f4f4;
+}
+
+#sidebar .inner {
+  position: sticky;
+  top: 30px;
+}
+
+/* 标题和标志 */
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+#header .logo {
+  font-size: 40px; /* 调整标题字号 */
+  color: var(--primary-color);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#header .logo span {
+  font-weight: normal;
+}
+
+#header .icons {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+#header .icons li {
+  margin-left: 10px;
+}
+
+#header .icons li a {
+  display: block;
+  color: #333;
+}
+
+#header .icons li a .label {
+  font-size: 12px;
+}
+
+/* 横幅 */
+#banner {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+#banner .content {
+  flex-basis: 60%;
+}
+
+#banner h1 {
+  font-size: 36px;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+#banner p {
+  font-size: 14px;
+  color: #777;
+}
+
+#banner .actions {
+  margin-top: 30px;
+}
+
+#banner .button {
+  background-color: var(--primary-color);
+  color: #000000;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+#banner .image {
+  flex-basis: 40%;
+}
+
+#banner .image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 特性部分 */
+section .major h2 {
+  font-size: 24px;
+  color: var(--primary-color);
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+  margin-bottom: 30px;
+}
+
+.features article {
+  display: flex;
+  align-items: center;
+}
+
+.features article .content {
+  margin-left: 20px;
+}
+
+.features article h3 {
+  font-size: 18px;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.features article p {
+  font-size: 14px;
+  color: #777;
+}
+
+/* 商品部分 */
+.posts section .major h2 {
+  font-size: 24px;
+  color: var(--primary-color);
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30  }
+  body {
+    background-color: #f8ecd6;
+  }

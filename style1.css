@@ -1,0 +1,265 @@
+/* 全局样式 */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  background-color: #ffffff;
+  color: #333;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+这段代码设置了网页的全局样式，包括字体、外边距、内边距、行高、背景颜色和文字颜色。另外，链接的颜色设置为主色变量，并且没有下划线。
+/* 页面布局 */
+#wrapper {
+  display: flex;
+}
+
+#main {
+  flex-basis: 90%;
+  padding: 30px;
+}
+
+#main .inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#sidebar {
+  flex-basis: 10%;
+  padding: 30px;
+  background-color: #f4f4f4;
+}
+
+#sidebar .inner {
+  position: sticky;
+  top: 30px;
+}
+这段代码设置了页面的布局，使用了弹性盒子布局。#wrapper是页面的主要容器，使用了flex属性。
+#main是主要内容区域，占据90%的宽度，有30像素的内边距。.inner是主要内容区域的内部容器，最大宽度为1000像素，水平居中对齐。
+#sidebar是侧边栏区域，占据10%的宽度，有30像素的内边距和背景颜色。.inner是侧边栏区域的内部容器，具有粘性定位，距离顶部30像素。
+/* 标题和标志 */
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+#header .logo {
+  font-size: 40px; /* 调整标题字号 */
+  color: var(--primary-color);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#header .logo span {
+  font-weight: normal;
+}
+
+#header .icons {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+#header .icons li {
+  margin-left: 10px;
+}
+
+#header .icons li a {
+  display: block;
+  color: #333;
+}
+
+#header .icons li a .label {
+  font-size: 12px;
+}
+这段代码设置了标题和标志的样式。#header是标题和标志的容器，使用了弹性盒子布局，水平居中对
+
+/* 图标 */
+#header .icons {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+#header .icons li {
+  margin-left: 10px;
+}
+
+#header .icons li a {
+  display: block;
+  color: #333;
+}
+
+#header .icons li a .label {
+  font-size: 12px;
+}
+这段代码设置了图标容器的样式，使用了弹性盒子布局。#header .icons选择器设置了图标容器的样式，将列表样式设置为无，去除了默认的外边距和内边距，并且使用了弹性盒子布局。
+#header .icons li选择器设置了图标列表项的样式，设置了左边距为10像素。#header .icons li a选择器设置了图标链接的样式，将链接显示为块级元素，并且设置了颜色为#333。
+
+/* 横幅 */
+#banner {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+#banner .content {
+  flex-basis: 60%;
+}
+
+#banner h1 {
+  font-size: 36px;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+#banner p {
+  font-size: 14px;
+  color: #777;
+}
+
+#banner .actions {
+  margin-top: 30px;
+}
+
+#banner .button {
+  background-color: var(--primary-color);
+  color: #000000;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+#banner .image {
+  flex-basis: 40%;
+}
+
+#banner .image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+这段代码设置了网页中的横幅部分的样式。#banner选择器设置了横幅容器的样式，使用了弹性盒子布局，并且垂直居中对齐。#banner .content选择器设置了横幅内容区域的样式，占据60%的宽度。
+#banner h1选择器设置了横幅标题的样式，使用了36像素的字体大小和主色变量的颜色。#banner p选择器设置了横幅段落的样式，使用了14像素的字体大小和#777的颜色。
+#banner .actions选择器设置了横幅操作区域的样式，设置了顶部外边距为30像素。#banner .button选择器设置了横幅按钮的样式，使用了主色变量的背景颜色和黑色的文字颜色。
+#banner .image选择器设置了横幅图片的样式，占据40%的宽度。#banner .image img选择器设置了横幅图片的样式，使其自适应容器的大小。
+/* 特性部分 */
+section .major h2 {
+  font-size: 24px;
+  color: var(--primary-color);
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+  margin-bottom: 30px;
+}
+
+.features article {
+  display: flex;
+  align-items: center;
+}
+
+.features article .content {
+  margin-left: 20px;
+}
+
+.features article h3 {
+  font-size: 18px;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.features article p {
+  font-size: 14px;
+  color: #777;
+}
+这段代码设置了网页中特性部分的样式。section .major h2选择器设置了特性部分标题的样式，使用了24像素的字体大小和主色变量的颜色。
+.features选择器设置了特性容器的样式，使用了网格布局，每列占据相等的空间，之间的间隔为30像素，并且底部外边距为30像素。.features article选择器设置了特性文章的样式，使用了弹性盒子布局，并且垂直居中对齐。
+.features article .content选择器设置了特性文章内容的样式，左边距为20像素。.features article h3选择器设置了特性文章标题的样式，使用了18像素的字体大小和主色变量的颜色。
+.features article p选择器设置了特性文章段落的样式，使用了14像素的字体大小和#777的颜色。
+/* 商品部分 */
+section .major h2 {
+  font-size: 24px;
+  color: var(--primary-color);
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  margin-top: 30px;
+}
+
+.posts article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.posts article .image {
+  position: relative;
+  width: 100%;
+  padding-bottom: 75%;
+  overflow: hidden;
+}
+
+.posts article .image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.posts article h3 {
+  font-size: 18px;
+  color: var(--primary-color);
+  margin-top: 20px;
+  text-align: center;
+}
+.posts article p {
+  font-size: 14px;s
+  color: #777;
+  text-align: center;
+}
+
+.posts article .actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.posts article .button {
+  background-color: var(--primary-color);
+  color: #0a0101;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.posts article .button:hover {
+  background-color: #ffffff;
+}
+body {
+  background-color: #f8ecd6;
+}这段代码设置了网页中商品部分的样式。section .major h2选择器设置了商品部分标题的样式，使用了24像素的字体大小和主色变量的颜色。
+.posts选择器设置了商品容器的样式，使用了网格布局，每列占据相等的空间，之间的间隔为30像素，并且顶部外边距为30像素。.posts article选择器设置了商品文章的样式，使用了弹性盒子布局，并且垂直居中对齐。
+.posts article .image选择器设置了商品文章图片的样式，设置了相对定位，宽度为100%，高度为宽度的75%，并且隐藏溢出部分。
+.posts article .image img选择器设置了商品文章图片的样式，设置了绝对定位，宽度和高度为100%，并且使用了覆盖对象的方式进行适应。
+.posts article h3选择器设置了商品文章标题的样式，使用了18像素的字体大小和主色变量的颜色，顶部外边距为20像素，并且居中对齐。
+.posts article p选择器设置了商品文章段落的样式，使用了14像素的字体大小和#777的颜色，居中对齐。
+.posts article .actions选择器设置了商品文章操作区域的样式，顶部外边距为20像素，并且使用弹性盒子布局进行居中对齐。
+.posts article .button选择器设置了商品文章按钮的样式，使用了主色变量的 
